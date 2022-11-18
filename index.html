@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+      <title>Portfolio Project</title>
+      <meta charset="utf-8">
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+      <link href="style.css" rel="stylesheet">
+      <script src="script.js"></script> 
+    </head>
+    <body>
+        <!--Navigation-->
+        <div class = "container navigation">
+            <header class="d-flex flex-wrap justify-content-center py-1 mb-4 border-bottom border-light ">
+              <a href="/" class=" logo d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <h4 class="fw-bold mt-1 fs-6">EM</h4>
+              </a>
+              <ul class="nav nav-pills list">
+                <li class="nav-1 nav-item" onclick="activeState('1')"><a href="#heroSec" class="nav-link" aria-current="page">Home</a></li>
+                <li class="nav-2 nav-item" onclick="activeState('2')"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-3 nav-item" onclick="activeState('3')"><a href="#tools" class="nav-link">Tools</a></li>
+                <li class="nav-4 nav-item" onclick="activeState('4')"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-5 nav-item" onclick="activeState('5')"><a href="#contact" class="nav-link">Contact</a></li>
+              </ul>
+            </header>
+          </div>
+
+          <!--Hero Section-->
+          <div class=" container justify-content-center col-xxl-8 px-4 py-5" id = "heroSec">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="my-col col-md-12 col-xs-12 col-sm-12 col-lg-6 text-center">
+                <img onmouseover="scaleImage()" onmouseout="minImage()"  id="hero-img"src ="asssets/monster.svg" width="400px" height="400px">
+              </div> 
+              <div class="my-col col-lg-6">
+                <h1 id="text"class="display-5 fw-bold lh-1 mb-3"></h1>
+                <p class="lead">I design and create illustrations. I bring art and life to your business.<span class="highlight"> I'll help you bring more customers through design. </span>  </p>
+                <div class="d-flex justify-content-md-start gap-2">
+                 <a href="https://www.behance.net/yepmags"> <img src = "asssets/behance.png" class="icons"> </a>
+                 <a href="https://www.facebook.com/yipyipyeptpey"><img src = "asssets/facebook-app-symbol.png" class="icons"> </a>
+                 <a href="#"><img src = "asssets/twitter.png" class="icons"> </a>
+                 <a href="https://github.com/EfraimMags"><img src = "asssets/github.png" class="icons"> </a>
+                </div>
+                <div class="d-grid gap-1 d-md-flex justify-content-md-start">
+                  <button onclick="goto('contact') " " type="button" class="btn my-button btn-lg px-4 me-md-2">Contact me <i class="bi bi-arrow-right-circle"></i></button>
+                  <button onclick="goto('about')" " type="button" class="btn btn-outline-secondary btn-lg px-4"">Get to know me</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          
+          <!--About-->
+          <div class="my-container container-fluid about" id="about">
+            <div class = "row justify-content-center">
+              <div class="about-col col-6 text-center gap-3 mt-5 ">
+                <img src="asssets/undraw_designer_re_5v95.svg" alt="monster artist" style =" width :150px; height:150px; ">
+                <h1 class="mt-5 ">About Me</h1>
+                <p class="lead">Hi I am a local graphic designer and illustrator, I have 1 year experience in video editing on a local news and public affairs and more than 3 years of freelancing. I used illustrator, photoshop, and adobe premiere for editing videos and designing. Right now I'm still improving my art style in digital painting, still progressing and learning new techniques</p>
+              </div>
+              <hr>
+            </div>
+          </div>
+
+
+          <!--Tools-->
+          <div class=" container mt-5 " id="tools">
+            <div class="row justify-content-center">
+              <div class="col text-center"><h1>Tools</h1></div></div>
+            <div class = " row justify-content-center gap-3 mb-5">
+              <div onmouseover = "scaleMe('1')" onmouseout="outScaleMe('1')" class="skill-col skill-col-1 col-lg-2 col-md-4 text-center gap-3 mt-5 ">
+                <img class="icon-skills" src="asssets/skills/photoshop.png" alt="photoshop" style =" width :80px; height:80px; ">
+                <p>adobe photoshop</p>
+              </div>
+              <div onmouseover = "scaleMe('2')"  onmouseout="outScaleMe('2')" class="skill-col skill-col-2 col-lg-2 col-md-4 text-center gap-3 mt-5 ">
+                <img class="icon-skills"src="asssets/skills/after-effects.png" alt="after Effects" style =" width :80px; height:80px; ">
+                <p>adobe after-effects</p>
+              </div>
+              <div onmouseover = "scaleMe('3')" onmouseout="outScaleMe('3')" class="skill-col skill-col-3 col-lg-2 col-md-4 text-center gap-3 mt-5 ">
+                <img class="icon-skills"src="asssets/skills/illustrator.png" alt="Illustrator" style =" width :80px; height:80px; ">
+                <p>adobe illustrator</p>
+              </div>
+              <div onmouseover = "scaleMe('4')" onmouseout="outScaleMe('4')" class="skill-col skill-col-4 col-lg-2 col-md-4 text-center gap-3 mt-5 ">
+                <img class="icon-skills"src="asssets/skills/premiere-pro.png" alt="adobe priemere" style =" width :80px; height:80px; ">
+                <p>adobe priemere pro</p>
+              </div>
+              <div onmouseover = "scaleMe('5')" onmouseout="outScaleMe('5')" class="skill-col skill-col-5 col-lg-2 col-md-4 text-center gap-3 mt-5 ">
+                <img class="icon-skills"src="asssets/skills/adobe-animate.png" alt="[hotoshop" style =" width :80px; height:80px; ">
+                <p>adobe animate</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!--Projects-->
+          <div class="gap container mt-5"></div>
+          <div class="container-fluid mt-5" id = "projects">
+            <div class = "row justify-content-center gap-1 mb-5">
+              <div class="col-lg-3 col-md-4  ">
+                <div class="row mb-1">
+                  <div class = "col">
+                    <h1>My Projects</h1> 
+                    <p class="lead"><span class="highlight">Personal projects and Freelance projects</span></p>
+                    <p class="fs-6 ">The projects are the latest projects i did for me and some of the clients from 2020 until the current year</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class = "col project-col card">
+                    <img src="asssets/project_img/bunny.png" class="cardImg card-img-top card-image proj-img" alt="project 1">
+                    <div class="card-body btn-1">
+                      <h5 class="card-title">Personal Project 1</h5>
+                      <p class="card-text">Digital painting for shirt design</p>
+                      <button onclick="appendAtag('1')" class=" btn my-button">view project <i class="bi bi-eye"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 project-col justify-content-md-start card">
+                  <img src="asssets/project_img/snil.png" class=" cardImg card-img-top card-image proj-img" alt="project 1">
+                  <div class="card-body btn-2">
+                    <h5 class="card-title">Illustration For Instagram</h5>
+                    <p class="card-text">creating kawaii animals, this project is for personal only. Its sole purpose is to give me another client butit turns out....</p>
+                    <button onclick="appendAtag('2')" class="btn my-button">view project <i class="bi bi-eye"></i></button>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 project-col justify-content-md-start card">
+                <img src="asssets/project_img/coin product - Meet New People.png" class=" cardImg card-img-top card-image proj-img" alt="project 1">
+                <div class="card-body btn-3">
+                  <h5 class="card-title">Boo Dating App App coin</h5>
+                  <p class="card-text">The Task is to create a graphic design for their coin app</p>
+                  <button onclick="appendAtag('3')" class="btn my-button">view project <i class="bi bi-eye"></i></button>
+                </div>
+
+              </div>
+              <div class="col-lg-2 col-md-4">
+                <div class="row mb-1">
+                  <div class="col project-col  justify-content-md-start card"> 
+                    <img src="asssets/project_img/pooch.png" class=" cardImg card-img-top card-image proj-img" alt="project 1">
+                    <div class="card-body btn-4">
+                    <h5 class="card-title">Pooch For Nfts</h5>
+                    <button onclick="appendAtag('4')" class="btn my-button">view project <i class="bi bi-eye"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col project-col card"> 
+                    <img src="asssets/project_img/monkey biz.png" class="cardImg card-img-top card-image proj-img" alt="project 1">
+                    <div class="card-body btn-5">
+                    <h5 class="card-title">Monkey Nfts</h5>
+                    <button onclick="appendAtag('5')"class="btn my-button">view project   <i class="bi bi-eye"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+
+
+        <!--Contact-->
+        <div class="mb-4 container"  id ="contact">
+          <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+          <p class="text-center w-responsive mx-auto mb-5"><span class="highlight">Are you interested? </span>Please do not hesitate to contact me directly. I will come back to you within
+              a matter of hours to help you.</p>
+
+          <div class="row">
+              <div class="col-md-9 mb-md-0 mb-5">
+                  <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                      <div class="row ">
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="name" name="name" class="form-control" placeholder="Full Name">
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control" placeholder="Email">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12  mt-2">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="subject" name="subject" class="form-control" placeholder="subject">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row mt-2">
+                          <div class="col-md-12">
+                              <div class="md-form">
+                                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Message"></textarea>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+
+                  <div class="text-center text-md-left mt-3">
+                      <a class="btn my-button" onclick="document.getElementById('contact-form').submit();">Send</a>
+                  </div>
+
+              </div>
+
+              <div class="col-md-3 text-center">
+                  <ul class="list-unstyled mb-0">
+                      <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                          <p>Davao Oriental, Martinez phase 8, Adjesum village, Mati city</p>
+                      </li>
+                      <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                          <p>+369237722191</p>
+                      </li>
+                      <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                          <p>emagdagasng@gmail.com</p>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+
+
+
+        <!--Footer-->
+        <div class="container-fluid footer ">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <span class="mb-3 mb-md-0 text-muted">© 2022 EMAGS Dezignsssss, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex gap-1">
+              <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/yipyipyeptpey"><img src="asssets/facebook-app-symbol.png" class="icons"></a></li>
+              <li class="ms-3"><a class="text-muted" href="https://github.com/EfraimMags"><img src="asssets/github.png" class="icons"></a></li>
+              <li class="ms-3"><a class="text-muted" href="#"><img src="asssets/twitter.png" class="icons"></a></li>
+              <li class="ms-3"><a class="text-muted" href="https://www.behance.net/yepmags"><img src="asssets/behance.png" class="icons"></a></li>
+            </ul>
+          </footer>
+        </div>
+
+</body>
+</html>

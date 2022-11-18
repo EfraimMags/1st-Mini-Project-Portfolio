@@ -1,0 +1,111 @@
+html{
+  scroll-behavior: smooth;
+  
+}
+.my-button:hover{
+  box-shadow: 2px 2px rgb(64, 237, 232);
+}
+body {
+  animation: fadeInAnimation ease 0.9s;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+.tool-row{
+  margin-bottom: 100px;
+}
+.nav-link{
+  color:white;
+}
+header h4{
+  color:white;
+}
+.logo{
+  margin-left: 20px
+}
+a{
+  text-decoration: none;
+}
+header{
+    position: fixed;
+    background-color: #1F1D20;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1;
+    width: 100%;
+}       
+.navigation{
+  margin-left: -12px;
+  border-bottom: 1px solid #1F1D20;
+}
+.list{
+  margin-right: 20px;
+} 
+.my-container{
+  background-color: #1F1D20; 
+  width: 100%;
+  margin-right: 0px;
+  border-top: 5px solid rgb(64, 237, 232);
+  border-bottom: 5px solid rgb(64, 237, 232);
+}
+.icons{
+  width: 25px;
+  height: 25px;
+  opacity: 0.4;
+  margin-bottom: 20px;
+}
+.about{
+  color:white;
+}
+.my-button{
+ background-color:  rgb(64, 237, 232);
+ border: 1px solid;
+ box-shadow: 5px 5px rgb(64, 237, 232);
+ color:#1F1D20;
+}
+.highlight{
+  background-color:  rgb(64, 237, 232);
+  color:white;
+}
+.icon-skills{
+  opacity: 0.9;
+  border: 5px solid rgb(64, 237, 232);
+  border-radius: 20px;
+}
+.skill-col{
+  border: 1px solid;
+  padding: 10px;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  box-shadow: 10px 10px rgb(64, 237, 232);
+  border-radius: 5px;
+}
+.project-col{
+  border: 1px solid rgb(173, 171, 171);
+  border-radius: 5px;
+}
+.project-col:hover{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+.card{
+  padding: 5px;
+}
+.proj-img{
+  border: 1px solid rgb(141, 140, 140);
+  border-radius: 5px;
+}
+.footer{
+  background-color: #1F1D20;
+  border: 1px solid #1F1D20 ; 
+}
+.card-warning{
+  color: red;
+  margin-top: 10px;
+}
